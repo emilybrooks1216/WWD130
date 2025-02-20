@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 500px; */
+}
+
+#btn-click-me {
+    background-color: blueviolet;
+    border: 1px solid #bb7575;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 15px;
+    box-shadow: -7px 6px 3px 3px rgb(51, 51, 51, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+}
+
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+  }
