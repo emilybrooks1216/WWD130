@@ -2,28 +2,34 @@
 /* Activity 1 styles */
 .content1 {
   /* This is the parent of the activity 1 boxes. */
-
+  display: grid
+  ;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      justify-items: center;
+      width: 400px;
+      margin: 0 auto;
 }
 .red1 { 
-  width: 100px; 
+  width: 100%;
   height: 100px; 
   background-color: red; 
-  grid-column: 1 / -1; 
+  grid-column: 1 / span 2; 
 } 
 .green1 {
-  width: 100px; 
+  width: calc(100% - 74px);
   height: 100px; 
   background-color: green; 
   grid-column: span 1;
 } 
 .yellow1 {
-  width: 100px; 
+  width: calc(100% - 74px);; 
   height: 100px; 
   background-color: gold; 
   grid-column: span 1;
 } 
 .blue1 {
-  width: 100px; 
+  width: 100%;
   height: 100px; 
   background-color: blue; 
   grid-column: 1 / -1;
@@ -35,58 +41,100 @@
   grid-template-rows: auto auto auto auto auto; 
   gap: 10px; 
   width: 100%; 
-  height: 100vh; 
+  height: 100vh;
 }
 /* Activity 2 styles */ 
 .content2 {
-  /* This is the parent of the activity 2 boxes. */
+  position: relative;
+  width: 200px; 
+  height: 200px;
 }
-
 
 .red2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green2 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.green2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  top: 25px; 
+  left: 25px;
+}
+
 .yellow2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  position: absolute;
+  top: 50px; 
+  left: 50px; 
+}
+
 .blue2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 75px; 
+  left: 75px; 
+}
+
 /* Activity 3 styles */ 
 .content3 {
-  /* This is the parent of the activity 3 boxes. */
+  display: grid;
+  flex-direction: column;
+  width: 300px; /* Adjust as needed */
 }
+
 .red3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1 / span 2;
+}
+
 .green3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green;
-} 
-.yellow3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
-.blue3 {
   width: 100px;
-  height: 100px; 
-  background-color: blue; 
-} 
+  height: 100px;
+  background-color: green;
+  grid-column: 1;
+}
+
+.yellow3 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  grid-column: 2;
+}
+
+.blue3 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1 / span 2;
+}
+
+.middle-section {
+  display: flex;
+}
+
+.middle-section > div {
+  flex: 1;
+}
+
+.white-space {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
 /* Activity 4 styles */ 
 .content4 {
   /* This is the parent of the activity 4 boxes. */
@@ -114,31 +162,57 @@
 } 
 /* Activity 5 styles */ 
 .content5 {
-  /* This is the parent of the activity 5 boxes. */
+  display: flex;
+  flex-direction: column;
   height: 400px;
+  width: 500px; 
 }
-.red5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
 
-} 
+.red5 {
+  width: 100%; 
+  height: 100px;
+  background-color: red;
+}
+
+.green5 {
+  width: 100px; 
+  height: 100px;
+  background-color: green;
+  position: relative;
+}
+
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  width: 100%; 
+  height: 100%;
+  background-color: gold;
+    display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding-left: 10px; 
+  box-sizing: border-box; 
+  font-size: 14px; 
+  font-family: sans-serif; 
+  color: black; 
+}
 
-} 
 .blue5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  width: 100%; 
+  height: 100px;
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+
+<div class="content5">
+  <div class="red5"></div>
+  <div class="green5"></div>
+  <div class="yellow5">Step 01: Continue creating the main page for your chosen web site by modifying the CSS file you created in week 9's Adding Classes and IDs to Your Website assignment. This week, you will position all of the content on your main page using the CSS positioning techniques taught in CodeAcademy. When you are done, your webpage layout should reflect what you outlined in the wireframe you designed in the assignment Your Own Site Diagram and Wireframe in week 3. If you have changed your mind on how you want the content of your main page laid out, take an opportunity to update your wireframe before completing this assignment (it is much easier to experiment with different layouts in a wireframe than it is to do so by modifying the CSS). Also, if you find that you are having trouble with using CSS positioning, feel free to review the concepts at the learn layout site: http://learnlayout.com/. You should be able to apply these principles to your site. For futher help, refer back to the Max Design site used in the beginning of the course for an example of how to implement your site design.</div>
+  <div class="blue5"></div>
+</div>
+
+<
+
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
