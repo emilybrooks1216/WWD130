@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poem Layout</title>
+<style>
+body {
+    font-family: sans-serif;
+}
+
+section {
+    width: 50%; /* Required for block alignment */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* For visual aid - remove in final version */
+    box-sizing: border-box; /* Important: Include padding in the width */
+}
+
+/* Block Alignment (using margins) */
+.block-1 { margin-left: 0; margin-right: auto; } /* Left-aligned */
+.block-2 { margin: 0 auto; } /* Center-aligned */
+.block-3 { margin-left: auto; margin-right: 0; } /* Right-aligned */
+.block-4 { margin: 0 auto; } /* Center-aligned */
+
+/* Paragraph Alignment within blocks (using nth-of-type) */
+section:nth-of-type(1) p:nth-of-type(1),
+section:nth-of-type(2) p:nth-of-type(1),
+section:nth-of-type(3) p:nth-of-type(1) { text-align: left; }
+
+section:nth-of-type(1) p:nth-of-type(2),
+section:nth-of-type(2) p:nth-of-type(2),
+section:nth-of-type(3) p:nth-of-type(2) { text-align: center; }
+
+section:nth-of-type(1) p:nth-of-type(3),
+section:nth-of-type(2) p:nth-of-type(3),
+section:nth-of-type(3) p:nth-of-type(3) { text-align: right; }
+
+/* Block 4 Paragraph Alignment (using descendant selector) */
+.block-4 p:nth-of-type(1) { text-align: right; }
+.block-4 p:nth-of-type(2) { text-align: center; }
+.block-4 p:nth-of-type(3),
+.block-4 p:nth-of-type(4) { text-align: left; }
+
+</style>
+</head>
+<body>
+
+<section class="block-1">
+    <p>The Cataract of Lodore</p>
+    <p>...The cataract strong</p>
+    <p>Then plunges along,</p>
+</section>
+
+<section class="block-2">
+    <p>Striking and raging</p>
+    <p>As if a war waging Its caverns and rocks among;</p>
+    <p>Rising and leaping, Sinking and creeping,</p>
+</section>
+
+<section class="block-3">
+    <p>Swelling and sweeping, Showering and springing,</p>
+    <p>Flying and flinging, Writhing and ringing,</p>
+    <p>Eddying and whisking, Spouting and frisking,</p>
+</section>
+
+<section class="block-4">
+    <p>Turning and twisting,</p>
+    <p>Around and around With endless rebound:</p>
+    <p>Smiting and fighting, A sight to delight in;</p>
+    <p>Confounding, astounding, Dizzying and deafening the ear with its sound.</p>
+</section>
+
+</body>
+</html>
