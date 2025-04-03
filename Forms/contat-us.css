@@ -1,0 +1,30 @@
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none; /* Initially hidden */
+  }
+  
+  .moveDown {
+    margin-top: 3em;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: .5em;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  
