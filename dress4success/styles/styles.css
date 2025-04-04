@@ -1,0 +1,231 @@
+@import url(https://fonts.google.com/specimen/Alegreya+Sans+SC?query=Alegreya+Sans+SC);
+
+
+.game img { 
+    width: 300px;
+    height: 300px;
+border-radius: 4px;
+}
+
+header img {
+    width: 400px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.game-grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1, h3 {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+/* .game p {
+    height: 300px;
+} */
+
+.height-300 {
+    height: 300px;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+padding: 30px;
+}
+
+.button {
+padding: 10px;
+border-radius: 15px;
+color: palevioletred;
+background-color: #fffdd0;
+box-shadow: 10px 10px #aaa991;
+}
+
+li a {
+    padding: 10px;
+border-radius: 15px;
+color: palevioletred;
+background-color: #fffdd0;
+box-shadow: 10px 10px #aaa991;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink, .purple {
+   
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pink {
+    background-color: palevioletred;
+}
+
+.purple {
+    background-color: #ac92a8;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+/* Reviews */
+
+
+
+  body {
+    background-color: white;
+    color: #333;
+    padding: 40px 20px;
+  }
+
+  .testimonial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-label {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .section-title .highlight {
+    color: #3498db;
+  }
+
+  .testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .quote-icon {
+    font-size: 32px;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+  }
+
+  .testimonial-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .author-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .author-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: #ddd;
+  }
+
+  .author-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .author-title {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .rating {
+    color: #f1c40f;
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .testimonial-card {
+      max-width: 100%;
+    }
+  }
